@@ -4,18 +4,25 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #667085;
+  --primary-color: #4080B9;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.primary-background {
+    background-color: var(--primary-color);
+}
+
+.frase {
+    border: solid 2px var(--primary-color);
+    border-radius: 50px;
+    font-style: italic;
 }
