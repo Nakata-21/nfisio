@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../app/globals.css";
 import Header from '@/app/ui/header';
 import Footer from '@/app/ui/footer';
-import { nunito } from '@/app/ui/fonts'; 
+import { nunito } from '@/app/ui/fonts';
 
 export const metadata: Metadata = {
     title: "Nfisio - Fisioterapia Neurológica",

@@ -18,6 +18,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const menuItems = [
+        "Inicio",
         "Más información",
         "Contacto",
     ];
@@ -35,6 +36,11 @@ export default function Header() {
                 </NavbarBrand>
             </NavbarContent>
             <NavbarContent className="hidden sm:flex gap-12" justify="end">
+                <NavbarItem>
+                    <Link className="primary-color hover:text-slate-600 active:text-slate-600 active:font-bold" href="/">
+                        Inicio
+                    </Link>
+                </NavbarItem>
                 <NavbarItem>
                     <Link className="primary-color hover:text-slate-600" href="#">
                         Más información
@@ -60,7 +66,7 @@ export default function Header() {
                                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
                             }
                             className="w-full"
-                            href="#"
+                            href="/"
                         >
                             {item}
                         </Link>
